@@ -1,14 +1,25 @@
-@"
+# Python
 __pycache__/
-*.pyc
-.env
-venv/
+*.py[cod]
 .venv/
-uploads/
-game_data.db
-*.db
-app_backup.py
+venv/
+
+# Secrets
 .streamlit/secrets.toml
-.agents/
-.claude/
-"@ | Set-Content .gitignore
+.env
+
+# Database and backups
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.db-wal
+*.db-shm
+*.bak
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+.DS_Store
