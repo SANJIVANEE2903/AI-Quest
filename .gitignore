@@ -1,0 +1,14 @@
+@"
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+uploads/
+game_data.db
+*.db
+app_backup.py
+.streamlit/secrets.toml
+.agents/
+.claude/
+"@ | Set-Content .gitignore
